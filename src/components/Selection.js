@@ -2,13 +2,13 @@ import React, { useState } from "react";
 
 const Selection = (props) => {
   const { applyColor } = props;
-  const [selectStyle, updateSelectStyle] = useState({ background: "" });
+  const [selectionStyle, updateSelectionStyle] = useState({ background: "" });
   return (
     <div
       className="box"
-      style={selectStyle}
+      style={selectionStyle}
       onClick={() => {
-        applyColor(updateSelectStyle);
+        applyColor(updateSelectionStyle);
       }}
     >
       <h3>Selection Page</h3>
